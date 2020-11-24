@@ -1,0 +1,28 @@
+Feature:  Takealot Shopping Website
+
+  As a user of the Takealot website. I want to register as a customer and
+  be able to search for products. And be able to select products that I can add
+  in the cart
+
+ Scenario: 1   Registration page
+    Given I am on the register page
+    And I complete the registration form
+    And I click the register now button
+    Then i should successfuly be directed to the search page
+    
+    
+ Scenario 2:     Search Page
+    Given I am on the search page
+    And I search for an item "watches"
+    And I click the submit button
+    Then i should be able to view the result of the search
+    
+    
+ Scenario 3:     Add to Cart Page
+   Given I am on the product page
+   And I select the product
+   Then  I click on the add to cart button
+   And I select the product called
+   Then I click on the add to cart button
+   Then I should be able to view both products in the shopping basket
+   
